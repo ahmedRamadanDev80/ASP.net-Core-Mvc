@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "nsZrVgRmYUQ7b/lMgRxBaw5P225RBACswq8f0Yr/uoo=",
+  "Hash": "Skjl31WeHjuMmQqGqw4AZnafxOAoWKSjXl4K6ApWxmQ=",
   "Source": "learnmvc",
   "BasePath": "_content/learnmvc",
   "Mode": "Default",
@@ -1188,6 +1188,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\products\\857d9051-834b-4a44-a4da-48f601b03210.png"
+    },
+    {
+      "Identity": "E:\\Ahmed Ramadan\\v2\\web app\\learnmvc\\wwwroot\\js\\company.js",
+      "SourceId": "learnmvc",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Ahmed Ramadan\\v2\\web app\\learnmvc\\wwwroot\\",
+      "BasePath": "_content/learnmvc",
+      "RelativePath": "js/company.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\company.js"
     },
     {
       "Identity": "E:\\Ahmed Ramadan\\v2\\web app\\learnmvc\\wwwroot\\js\\product.js",

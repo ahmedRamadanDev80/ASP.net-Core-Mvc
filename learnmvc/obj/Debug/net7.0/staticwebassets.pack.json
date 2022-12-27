@@ -33,6 +33,10 @@
       "PackagePath": "staticwebassets\\images\\products\\857d9051-834b-4a44-a4da-48f601b03210.png"
     },
     {
+      "Id": "E:\\Ahmed Ramadan\\v2\\web app\\learnmvc\\wwwroot\\js\\company.js",
+      "PackagePath": "staticwebassets\\js\\company.js"
+    },
+    {
       "Id": "E:\\Ahmed Ramadan\\v2\\web app\\learnmvc\\wwwroot\\js\\product.js",
       "PackagePath": "staticwebassets\\js\\product.js"
     },

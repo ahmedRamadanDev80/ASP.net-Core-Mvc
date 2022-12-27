@@ -1,0 +1,24 @@
+D:\study\repos\web app\learnmvc.Utility\bin\Debug\net6.0\learnmvc.Utility.deps.json
+D:\study\repos\web app\learnmvc.Utility\bin\Debug\net6.0\learnmvc.Utility.dll
+D:\study\repos\web app\learnmvc.Utility\bin\Debug\net6.0\learnmvc.Utility.pdb
+D:\study\repos\web app\learnmvc.Utility\obj\Debug\net6.0\learnmvc.Utility.csproj.AssemblyReference.cache
+D:\study\repos\web app\learnmvc.Utility\obj\Debug\net6.0\learnmvc.Utility.GeneratedMSBuildEditorConfig.editorconfig
+D:\study\repos\web app\learnmvc.Utility\obj\Debug\net6.0\learnmvc.Utility.AssemblyInfoInputs.cache
+D:\study\repos\web app\learnmvc.Utility\obj\Debug\net6.0\learnmvc.Utility.AssemblyInfo.cs
+D:\study\repos\web app\learnmvc.Utility\obj\Debug\net6.0\learnmvc.Utility.csproj.CoreCompileInputs.cache
+D:\study\repos\web app\learnmvc.Utility\obj\Debug\net6.0\learnmvc.Utility.dll
+D:\study\repos\web app\learnmvc.Utility\obj\Debug\net6.0\refint\learnmvc.Utility.dll
+D:\study\repos\web app\learnmvc.Utility\obj\Debug\net6.0\learnmvc.Utility.pdb
+D:\study\repos\web app\learnmvc.Utility\obj\Debug\net6.0\ref\learnmvc.Utility.dll
+E:\Ahmed Ramadan\v2\web app\learnmvc.Utility\bin\Debug\net6.0\learnmvc.Utility.deps.json
+E:\Ahmed Ramadan\v2\web app\learnmvc.Utility\bin\Debug\net6.0\learnmvc.Utility.dll
+E:\Ahmed Ramadan\v2\web app\learnmvc.Utility\bin\Debug\net6.0\learnmvc.Utility.pdb
+E:\Ahmed Ramadan\v2\web app\learnmvc.Utility\obj\Debug\net6.0\learnmvc.Utility.csproj.AssemblyReference.cache
+E:\Ahmed Ramadan\v2\web app\learnmvc.Utility\obj\Debug\net6.0\learnmvc.Utility.GeneratedMSBuildEditorConfig.editorconfig
+E:\Ahmed Ramadan\v2\web app\learnmvc.Utility\obj\Debug\net6.0\learnmvc.Utility.AssemblyInfoInputs.cache
+E:\Ahmed Ramadan\v2\web app\learnmvc.Utility\obj\Debug\net6.0\learnmvc.Utility.AssemblyInfo.cs
+E:\Ahmed Ramadan\v2\web app\learnmvc.Utility\obj\Debug\net6.0\learnmvc.Utility.csproj.CoreCompileInputs.cache
+E:\Ahmed Ramadan\v2\web app\learnmvc.Utility\obj\Debug\net6.0\learnmvc.Utility.dll
+E:\Ahmed Ramadan\v2\web app\learnmvc.Utility\obj\Debug\net6.0\refint\learnmvc.Utility.dll
+E:\Ahmed Ramadan\v2\web app\learnmvc.Utility\obj\Debug\net6.0\learnmvc.Utility.pdb
+E:\Ahmed Ramadan\v2\web app\learnmvc.Utility\obj\Debug\net6.0\ref\learnmvc.Utility.dll

@@ -1,8 +1,23 @@
 {
   "version": 2,
-  "dgSpecHash": "eYW5WtqgjcqWeZu723snQjLCYMF6f7uwEU50q+dA4xkgWF2e1wSii2K1XJ6PY6kmR7RxYqJj/EYZmVvi+RNstQ==",
+  "dgSpecHash": "gwN9mV4k2x1Lm69R/KhMCda4TtqOsZ2bAjQK2b9otGd+fYWT6B0ZuyT7MDn9cJK5+qCUCq16cbfVhXZ0jsJ3xA==",
   "success": true,
   "projectFilePath": "E:\\Ahmed Ramadan\\v2\\web app\\learnmvc.Utility\\learnmvc.Utility.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Basha\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\7.0.1\\microsoft.aspnetcore.cryptography.internal.7.0.1.nupkg.sha512",
+    "C:\\Users\\Basha\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\7.0.1\\microsoft.aspnetcore.cryptography.keyderivation.7.0.1.nupkg.sha512",
+    "C:\\Users\\Basha\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.1\\microsoft.aspnetcore.identity.ui.7.0.1.nupkg.sha512",
+    "C:\\Users\\Basha\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\Basha\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "C:\\Users\\Basha\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\Basha\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\7.0.0\\microsoft.extensions.fileproviders.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\Basha\\.nuget\\packages\\microsoft.extensions.fileproviders.embedded\\7.0.1\\microsoft.extensions.fileproviders.embedded.7.0.1.nupkg.sha512",
+    "C:\\Users\\Basha\\.nuget\\packages\\microsoft.extensions.identity.core\\7.0.1\\microsoft.extensions.identity.core.7.0.1.nupkg.sha512",
+    "C:\\Users\\Basha\\.nuget\\packages\\microsoft.extensions.identity.stores\\7.0.1\\microsoft.extensions.identity.stores.7.0.1.nupkg.sha512",
+    "C:\\Users\\Basha\\.nuget\\packages\\microsoft.extensions.logging\\7.0.0\\microsoft.extensions.logging.7.0.0.nupkg.sha512",
+    "C:\\Users\\Basha\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\Basha\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",
+    "C:\\Users\\Basha\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

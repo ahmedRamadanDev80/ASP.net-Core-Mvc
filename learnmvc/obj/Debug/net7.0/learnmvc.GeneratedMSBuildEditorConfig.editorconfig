@@ -12,7 +12,7 @@ build_property.RootNamespace = learnmvc
 build_property.ProjectDir = E:\Ahmed Ramadan\v2\web app\learnmvc\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
-build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = E:\Ahmed Ramadan\v2\web app\learnmvc
 build_property._RazorSourceGeneratorDebug = 
 

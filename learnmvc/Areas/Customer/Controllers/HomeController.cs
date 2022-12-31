@@ -1,8 +1,10 @@
 ﻿using learnmvc.DataAccess.Repository.IRepository;
 using learnmvc.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Security.Claims;
 
 namespace learnmvc.Areas.Customer.Controllers
 {
@@ -23,15 +25,38 @@ namespace learnmvc.Areas.Customer.Controllers
             IEnumerable<Product> productList = _unitOfWork.Product.GetAll(includeProperties:"Category,CoverType");
             return View(productList);
         }
-        public IActionResult Details(int id)
+        public IActionResult Details(int ProductId)
         {
             ShoppingCart cartObj = new()
             {
+                ProductId = ProductId,
                 Count = 1,
-                Product = _unitOfWork.Product.GetFirstOrDefault(u => u.Id == id, includeProperties: "Category,CoverType")
+                Product = _unitOfWork.Product.GetFirstOrDefault(u => u.Id == ProductId, includeProperties: "Category,CoverType")
             };
             return View(cartObj);
         }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        [Authorize]
+        public IActionResult Details(ShoppingCart shoppingCart)
+        {
+            var claimsIdentity = (ClaimsIdentity)User.Identity;
+            var claim = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
+            shoppingCart.ApplicationUserId = claim.Value;
+            ShoppingCart CartFromDb = _unitOfWork.ShoppingCart.GetFirstOrDefault(
+                u=>u.ApplicationUserId == claim.Value && u.ProductId == shoppingCart.ProductId);
+            if(CartFromDb == null)
+            {
+             _unitOfWork.ShoppingCart.Add(shoppingCart);
+            }
+            else
+            {
+                _unitOfWork.ShoppingCart.IncrementCount(CartFromDb, shoppingCart.Count);
+            }
+            _unitOfWork.Save();
+            return RedirectToAction(nameof(Index));
+        }
+
 
         public IActionResult Privacy()
         {

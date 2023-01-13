@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace learnmvc.Areas.Admin.Controllers
 {
+	[Area("Admin")]
+
 	public class OrderController : Controller
 	{
 		private readonly IUnitOfWork _unitOfWork;

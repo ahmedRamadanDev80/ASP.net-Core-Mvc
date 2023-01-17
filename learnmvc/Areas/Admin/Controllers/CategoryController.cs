@@ -1,11 +1,14 @@
 ﻿using learnmvc.DataAccess;
 using learnmvc.DataAccess.Repository.IRepository;
 using learnmvc.Models;
+using learnmvc.Utility;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace learnmvc.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = SD.Role_Admin)]
     public class CategoryController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;

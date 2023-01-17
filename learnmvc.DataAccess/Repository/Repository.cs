@@ -41,9 +41,17 @@ namespace learnmvc.DataAccess.Repository
             return query.ToList();
         }
 
-        public T GetFirstOrDefault(Expression<Func<T, bool>> filter, string? includeProperties = null)
+        public T GetFirstOrDefault(Expression<Func<T, bool>> filter, string? includeProperties = null, bool tracked = true)
         {
-            IQueryable<T> query = dbset;
+            IQueryable<T> query;
+            if (tracked)
+            {
+                query = dbset;
+            }
+            else
+            {
+                query = dbset.AsNoTracking();
+            }
             query = query.Where(filter);
             if (includeProperties != null)
             {

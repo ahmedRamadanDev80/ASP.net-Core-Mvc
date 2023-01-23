@@ -202,6 +202,8 @@ namespace learnmvc.Areas.Customer.Controllers
             if (cart.Count <=1)
             {
 				_unitOfWork.ShoppingCart.Remove(cart);
+                var count = _unitOfWork.ShoppingCart.GetAll(u => u.ApplicationUserId == cart.ApplicationUserId).ToList().Count - 1;
+                HttpContext.Session.SetInt32(SD.SessionCart, count);
             }
             else
             {
@@ -215,7 +217,9 @@ namespace learnmvc.Areas.Customer.Controllers
 			var cart = _unitOfWork.ShoppingCart.GetFirstOrDefault(u => u.Id == cartId);
 			_unitOfWork.ShoppingCart.Remove(cart);
 			_unitOfWork.Save();
-			return RedirectToAction(nameof(Index));
+            var count = _unitOfWork.ShoppingCart.GetAll(u => u.ApplicationUserId == cart.ApplicationUserId).ToList().Count;
+            HttpContext.Session.SetInt32(SD.SessionCart, count);
+            return RedirectToAction(nameof(Index));
 		}
 
 		private double getPriceBasedOnQuantity(double quantity ,double price,double price50,double price100)

@@ -1,7 +1,9 @@
 ﻿using learnmvc.DataAccess.Repository.IRepository;
 using learnmvc.Models;
+using learnmvc.Utility;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Http;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Security.Claims;
@@ -47,13 +49,17 @@ namespace learnmvc.Areas.Customer.Controllers
                 u=>u.ApplicationUserId == claim.Value && u.ProductId == shoppingCart.ProductId);
             if(CartFromDb == null)
             {
-             _unitOfWork.ShoppingCart.Add(shoppingCart);
+                _unitOfWork.ShoppingCart.Add(shoppingCart);
+                _unitOfWork.Save();
+                HttpContext.Session.SetInt32(SD.SessionCart,
+                    _unitOfWork.ShoppingCart.GetAll(u => u.ApplicationUserId == claim.Value).ToList().Count);
             }
             else
             {
                 _unitOfWork.ShoppingCart.IncrementCount(CartFromDb, shoppingCart.Count);
+                _unitOfWork.Save();
             }
-            _unitOfWork.Save();
+            
             return RedirectToAction(nameof(Index));
         }
 

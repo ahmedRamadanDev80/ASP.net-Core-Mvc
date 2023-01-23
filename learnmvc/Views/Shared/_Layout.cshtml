@@ -1,4 +1,6 @@
-﻿@using learnmvc.Utility;
+﻿@using Microsoft.AspNetCore.Http
+@using learnmvc.Utility;
+@inject IHttpContextAccessor HttpContextAccessor
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,7 +45,18 @@
                             </li>
                         }
                         <li class="nav-item"><a class=nav-link asp-area="Admin" asp-controller="Order" asp-action="Index">Manage Order</a></li>
-                        <li class="nav-item"><a class="nav-link"asp-area="Customer" asp-controller="Cart" asp-action="Index"><i class="bi bi-cart3"></i></a></li>
+                        @if (HttpContextAccessor.HttpContext.Session.GetInt32(SD.SessionCart) != null)
+						{
+							<li class="nav-item">
+							<a class=nav-link asp-area="Customer" asp-controller="Cart" asp-action="Index">
+								<i class="bi bi-cart"></i> &nbsp;
+								(@HttpContextAccessor.HttpContext.Session.GetInt32(SD.SessionCart))
+							</a>
+						</li>
+						}
+						else{
+                            <li class="nav-item"><a class="nav-link" asp-area="Customer" asp-controller="Cart" asp-action="Index"><i class="bi bi-cart3"></i>  &nbsp; (0)</a></li>
+                        }
                     </ul>
                     <partial name="_LoginPartial"/>
                 </div>
